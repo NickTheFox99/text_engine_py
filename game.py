@@ -1,6 +1,7 @@
 class Game:
     def __init__(self) -> None:
-        pass
+        self.current_query = None
+        self.result = None
     def query(self) -> int:
         try:
             self.current_query = input("> ")
@@ -34,5 +35,4 @@ class Game:
             result = self.output()
             if result != 0:
                 return result
-        return 0
     
